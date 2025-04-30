@@ -1,12 +1,25 @@
 {
   "name": "npx-sudosuanjal",
   "version": "1.0.0",
-  "description": "",
+  "description": "CLI card for Anjal (sudosuanjal)",
   "main": "index.js",
+  "bin": {
+    "sudosuanjal": "./index.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "keywords": [
+    "CLI",
+    "sudosuanjal",
+    "npx",
+    "web3",
+    "anjal"
+  ],
+  "author": "Anjal",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^5.4.1",
+    "figlet": "^1.8.1"
+  }
 }
