@@ -1,24 +1,27 @@
 #!/usr/bin/env node
 
-import figlet from "figlet";
+import chalkAnimation from "chalk-animation";
 import chalk from "chalk";
+import figlet from "figlet";
 
-console.log(
-  chalk.cyan(
-    figlet.textSync("sudosuanjal", {
-      horizontalLayout: "default",
-      verticalLayout: "default",
-    })
-  )
-);
+const text = figlet.textSync("sudosuanjal");
 
-console.log(
-  chalk.green(`
+const rainbow = chalkAnimation.pulse("Welcome to sudosuanjal CLI!", 2);
+setTimeout(() => {
+  rainbow.stop();
+
+  const animated = chalkAnimation.radar(text);
+  setTimeout(() => {
+    animated.stop();
+    console.log(
+      chalk.black(`
 Hey, I'm Anjal!
-🚀 Builder | CSE Student
+🚀 Web3 Builder | CSE Student
 
-🌐 Portfolio: https://sudosuanjal.vercel.app
+🌐 Portfolio: https://sudosuanjal.vercel.app/
 🐦 Twitter: @sudosuanjal
 💼 LinkedIn: https://linkedin.com/in/sudosuanjal
-`)
-);
+  `)
+    );
+  }, 7000); // Stop after 3 seconds
+}, 2500);

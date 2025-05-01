@@ -1,5 +1,5 @@
 {
-  "name": "npx-sudosuanjal",
+  "name": "sudosuanjal",
   "version": "1.0.0",
   "description": "CLI card for Anjal (sudosuanjal)",
   "main": "index.js",
@@ -21,6 +21,8 @@
   "license": "ISC",
   "dependencies": {
     "chalk": "^5.4.1",
-    "figlet": "^1.8.1"
+    "chalk-animation": "^2.0.3",
+    "figlet": "^1.8.1",
+    "ora": "^8.2.0"
   }
 }
