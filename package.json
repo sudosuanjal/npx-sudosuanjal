@@ -1,6 +1,6 @@
 {
   "name": "sudosuanjal",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "CLI card for Anjal (sudosuanjal)",
   "main": "index.js",
   "bin": {

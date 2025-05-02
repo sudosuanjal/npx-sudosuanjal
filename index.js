@@ -14,7 +14,7 @@ setTimeout(() => {
   setTimeout(() => {
     animated.stop();
     console.log(
-      chalk.black(`
+      chalk.cyan(`
 Hey, I'm Anjal!
 🚀 Web3 Builder | CSE Student
 
